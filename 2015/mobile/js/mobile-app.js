@@ -47,7 +47,7 @@ function set_param(key, value) {
 }
 
 var current_date;
-var get_path_date = function(){ var m = location.pathname.match(/schedule-(\d{4}-\d{2}-\d{2})-(?:pc|sp)\.html$/); return m ? m[1] : null; };
+var get_path_date = function(){ var m = location.pathname.match(/schedule-(\d{4}-\d{2}-\d{2})-(?:pc|sp)(?:\.html)?$/); return m ? m[1] : null; };
 var param_date = get_param('date') || get_path_date();
 if(param_date) {
   var list = ['2015-08-20', '2015-08-21', '2015-08-22'];
