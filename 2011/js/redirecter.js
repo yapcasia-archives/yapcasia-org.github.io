@@ -1,8 +1,8 @@
-const currentUrl = new URL(window.location.href);
-const path = currentUrl.pathname + currentUrl.search;
-
-if (currentUrl.search === '?lang=en') {
-  const newPath = currentUrl.pathname.replace('.html', '');
-  const newHref = newPath + '@lang=en.html';
-  window.location.href = newHref;
-}
+// yapcasia.org 2011: ?lang=en を静的ミラーの *@lang=en.html へ振り分ける。
+// ディレクトリ URL(末尾が / または index.html)には対応ファイルが無いので何もしない(S0-10 / D-18)。
+(function () {
+  if (location.search !== '?lang=en') return;
+  var path = location.pathname;
+  if (path.slice(-1) === '/' || /\/index\.html$/.test(path)) return;
+  location.replace(path.replace(/\.html$/, '') + '@lang=en.html' + location.hash);
+})();

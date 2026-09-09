@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:mixi="http://mixi-platform.com/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8">
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="Talk Schedules - YAPC::Asia Tokyo 2012 [SEPTEMBER 27,28 & 29th]"/>
+<meta property="twitter:description" content="世界最大のYAPCがまた今年ももどってきました！YAPCはYet Another Perl Conferenceの略で、Perlに関するカンファレンス・・・いや、お祭りです！" />
+<meta property="og:title" content="Talk Schedules - YAPC::Asia Tokyo 2012 [SEPTEMBER 27,28 & 29th]"/>
+<meta property="og:type" content="article"/>
+
+
+<meta property="og:image" content="/2012//static/images/icon_fb.gif"/>
+<meta property="og:site_name" content="YAPC::Asia Tokyo 2012"/>
+<meta property="og:description" content="世界最大のYAPCがまた今年ももどってきました！YAPCはYet Another Perl Conferenceの略で、Perlに関するカンファレンス・・・いや、お祭りです！" />
+<title>Talk Schedules</title>
+<meta name="description" content="Perl YAPC::Asia Tokyo 2012 Conference">
+<meta name="keywords" content="Perl,YAPC,YAPC::Asia,Evolution,JPA,Japan Perl Association,tokyo">
+<meta name="copyright" content="(c) 2012 Japan Perl Association" />
+<meta name="publisher" content="Japan Perl Association" />
+<meta name="author" content="Dausuke Maki">
+<link rel="start" href="/2012/" title="ホーム" />
+<link rel="shortcut icon" href="/2012/static/images/favicon.ico">
+<link href="/2012//atom.xml" type="application/atom+xml" rel="alternate" title="YAPC::Asia Tokyo 2012 Atom Feed" />
+<link href="/2012/static/css/style.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<a id="top" name="top"></a>
+
+<div id="header">
+<div class="innerblock">
+<ul id="g-navigation">
+<li><a href="/2012/">Home</a></li>
+<li><a href="/2012/#date">Access/Date</a></li>
+<li><a href="/2012/talk">Talks</a></li>
+<li><a href="/2012/#news">News</a></li>
+<li><a href="/2012/sponsor/">Sponsors</a></li>
+<li><a href="/2012/news/yapcasia-tickets-on-sale.html">Tickets</a></li>
+
+<script type="text/javascript">
+<!--
+    if (navigator.userAgent.match(/Googlebot-Mobile|iPad|Opera Mini|iPhone|iPod|Android|BlackBerry/)) {
+        document.writeln("<li><a href=\"/2012/mode?view=lite\">Smartphone</a></li>");
+    }
+-->
+</script>
+<li style="float: right">
+<form id="ddg" style="float: right" class="form-horizontal">
+<img src="http://duckduckgo.com/assets/logo_icon60.v101.png" style="margin-top: 10px; width: 30px; height: 30px; float: left">
+<div class="controls" style="vertical-align: middle; margin-top: 10px; padding-left:5px">
+<input name="q" class="input-large" placeholder="YAPC::Asia Tokyo 2012を検索"/>
+<button class="button button-primary button-small" style="margin-top: 5px">検索</button>
+</div>
+</form>
+</li>
+</ul>
+<!--
+<ul id="s-navigation">
+
+<li><a href="/2012/en/">English</a></li>
+</ul>
+-->
+</div>
+</div><!--  / #header /  -->
+<script type="text/javascript">
+<!--
+    $(document).ready(function(){
+        $("button", "#ddg").each(function(i, e){
+            $(e).click(function(){
+                var query =  $("#ddg").serialize();
+                var url = "http://duckduckgo.com/?"+ query + "+site%3Ayapcasia.org%2F2012%2F";
+                location.href = url;
+                return false;
+            });
+        });
+   });
+-->
+</script>
+
+<div id="main-banner">
+<div class="innerblock">
+<h1 title="YAPC::Asia TOKYO 2012 | Take Another Step Forward [SEPTEMBER 27,28 & 29th]">YAPC::Asia TOKYO 2012</h1>
+<h2>Take Another Step Forward</h2>
+<h3>SEPTEMBER 27,28 & 29th</h3>
+</div>
+</div><!--  / #main-banner /  -->
+
+<div id="container">
+
+
+
+<style>
+<!--
+    .schedule {
+        margin-left: 1em;
+    }
+    .schedule .timeaxis {
+        font-size: 0.6em;
+        float: left;
+        width: 50px;
+        background: #eee;
+    }
+    .schedule .timeaxis .row:first-child {
+        margin-top: 25px;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+    .schedule .timeaxis .row {
+        text-align: right;
+        vertical-align: middle;
+        height: 25px;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-top: none;
+    }
+    .schedule .timeaxis .row .hm {
+        margin-right: 3px;
+    }
+    .schedule .venue {
+        position: relative;
+        float: left;
+        width: 130px;
+        background: #bbb;
+        height: 3924px;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+    .schedule .venue:last-child {
+        border-right: 1px solid #ccc;
+    }
+    .schedule .venue .venue-name {
+        background-color: #fff;
+        height: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8em;
+        border-bottom: 1px solid #ccc;
+    }
+    .schedule .venue .talk {
+        position: absolute;
+        font-size: 0.6em;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .schedule .venue .talk .title a {
+        font-weight: bold;
+    }
+    .schedule .venue .talk .title {
+        margin: 5px 0 0 5px;
+    }
+    .schedule .venue .talk .detail {
+        margin: 0 0 0 5px;
+    }
+
+    ul.dates {
+        margin: 1em;
+    }
+    ul.dates li {
+        padding-left: 2em;
+        padding-right: 2em;
+        list-style: none;
+        display: inline;
+        font-size: 9pt;
+        font-weight: normal;
+        border-left: 1px solid #000;
+    }
+    ul.dates li:first-child {
+        border: none;
+    }
+-->
+</style>
+
+<div id="main-contents">
+
+<div class="section">
+
+<h2>Talk Schedule</h2>
+<ul class="dates">
+
+    <li><a href="/2012/talk/schedule?date=2012-09-27">2012-09-27</a></li>
+
+    <li>2012-09-28</li>
+
+    <li><a href="/2012/talk/schedule?date=2012-09-29">2012-09-29</a></li>
+
+</ul>
+<div class="schedule">
+<div class="timeaxis">
+
+
+
+
+
+<div class="row"><span class="hm">9:30</span></div>
+
+<div class="row"><span class="hm">9:35</span></div>
+
+<div class="row"><span class="hm">9:40</span></div>
+
+<div class="row"><span class="hm">9:45</span></div>
+
+<div class="row"><span class="hm">9:50</span></div>
+
+<div class="row"><span class="hm">9:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">10:00</span></div>
+
+<div class="row"><span class="hm">10:05</span></div>
+
+<div class="row"><span class="hm">10:10</span></div>
+
+<div class="row"><span class="hm">10:15</span></div>
+
+<div class="row"><span class="hm">10:20</span></div>
+
+<div class="row"><span class="hm">10:25</span></div>
+
+<div class="row"><span class="hm">10:30</span></div>
+
+<div class="row"><span class="hm">10:35</span></div>
+
+<div class="row"><span class="hm">10:40</span></div>
+
+<div class="row"><span class="hm">10:45</span></div>
+
+<div class="row"><span class="hm">10:50</span></div>
+
+<div class="row"><span class="hm">10:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">11:00</span></div>
+
+<div class="row"><span class="hm">11:05</span></div>
+
+<div class="row"><span class="hm">11:10</span></div>
+
+<div class="row"><span class="hm">11:15</span></div>
+
+<div class="row"><span class="hm">11:20</span></div>
+
+<div class="row"><span class="hm">11:25</span></div>
+
+<div class="row"><span class="hm">11:30</span></div>
+
+<div class="row"><span class="hm">11:35</span></div>
+
+<div class="row"><span class="hm">11:40</span></div>
+
+<div class="row"><span class="hm">11:45</span></div>
+
+<div class="row"><span class="hm">11:50</span></div>
+
+<div class="row"><span class="hm">11:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">12:00</span></div>
+
+<div class="row"><span class="hm">12:05</span></div>
+
+<div class="row"><span class="hm">12:10</span></div>
+
+<div class="row"><span class="hm">12:15</span></div>
+
+<div class="row"><span class="hm">12:20</span></div>
+
+<div class="row"><span class="hm">12:25</span></div>
+
+<div class="row"><span class="hm">12:30</span></div>
+
+<div class="row"><span class="hm">12:35</span></div>
+
+<div class="row"><span class="hm">12:40</span></div>
+
+<div class="row"><span class="hm">12:45</span></div>
+
+<div class="row"><span class="hm">12:50</span></div>
+
+<div class="row"><span class="hm">12:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">13:00</span></div>
+
+<div class="row"><span class="hm">13:05</span></div>
+
+<div class="row"><span class="hm">13:10</span></div>
+
+<div class="row"><span class="hm">13:15</span></div>
+
+<div class="row"><span class="hm">13:20</span></div>
+
+<div class="row"><span class="hm">13:25</span></div>
+
+<div class="row"><span class="hm">13:30</span></div>
+
+<div class="row"><span class="hm">13:35</span></div>
+
+<div class="row"><span class="hm">13:40</span></div>
+
+<div class="row"><span class="hm">13:45</span></div>
+
+<div class="row"><span class="hm">13:50</span></div>
+
+<div class="row"><span class="hm">13:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">14:00</span></div>
+
+<div class="row"><span class="hm">14:05</span></div>
+
+<div class="row"><span class="hm">14:10</span></div>
+
+<div class="row"><span class="hm">14:15</span></div>
+
+<div class="row"><span class="hm">14:20</span></div>
+
+<div class="row"><span class="hm">14:25</span></div>
+
+<div class="row"><span class="hm">14:30</span></div>
+
+<div class="row"><span class="hm">14:35</span></div>
+
+<div class="row"><span class="hm">14:40</span></div>
+
+<div class="row"><span class="hm">14:45</span></div>
+
+<div class="row"><span class="hm">14:50</span></div>
+
+<div class="row"><span class="hm">14:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">15:00</span></div>
+
+<div class="row"><span class="hm">15:05</span></div>
+
+<div class="row"><span class="hm">15:10</span></div>
+
+<div class="row"><span class="hm">15:15</span></div>
+
+<div class="row"><span class="hm">15:20</span></div>
+
+<div class="row"><span class="hm">15:25</span></div>
+
+<div class="row"><span class="hm">15:30</span></div>
+
+<div class="row"><span class="hm">15:35</span></div>
+
+<div class="row"><span class="hm">15:40</span></div>
+
+<div class="row"><span class="hm">15:45</span></div>
+
+<div class="row"><span class="hm">15:50</span></div>
+
+<div class="row"><span class="hm">15:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">16:00</span></div>
+
+<div class="row"><span class="hm">16:05</span></div>
+
+<div class="row"><span class="hm">16:10</span></div>
+
+<div class="row"><span class="hm">16:15</span></div>
+
+<div class="row"><span class="hm">16:20</span></div>
+
+<div class="row"><span class="hm">16:25</span></div>
+
+<div class="row"><span class="hm">16:30</span></div>
+
+<div class="row"><span class="hm">16:35</span></div>
+
+<div class="row"><span class="hm">16:40</span></div>
+
+<div class="row"><span class="hm">16:45</span></div>
+
+<div class="row"><span class="hm">16:50</span></div>
+
+<div class="row"><span class="hm">16:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">17:00</span></div>
+
+<div class="row"><span class="hm">17:05</span></div>
+
+<div class="row"><span class="hm">17:10</span></div>
+
+<div class="row"><span class="hm">17:15</span></div>
+
+<div class="row"><span class="hm">17:20</span></div>
+
+<div class="row"><span class="hm">17:25</span></div>
+
+<div class="row"><span class="hm">17:30</span></div>
+
+<div class="row"><span class="hm">17:35</span></div>
+
+<div class="row"><span class="hm">17:40</span></div>
+
+<div class="row"><span class="hm">17:45</span></div>
+
+<div class="row"><span class="hm">17:50</span></div>
+
+<div class="row"><span class="hm">17:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">18:00</span></div>
+
+<div class="row"><span class="hm">18:05</span></div>
+
+<div class="row"><span class="hm">18:10</span></div>
+
+<div class="row"><span class="hm">18:15</span></div>
+
+<div class="row"><span class="hm">18:20</span></div>
+
+<div class="row"><span class="hm">18:25</span></div>
+
+<div class="row"><span class="hm">18:30</span></div>
+
+<div class="row"><span class="hm">18:35</span></div>
+
+<div class="row"><span class="hm">18:40</span></div>
+
+<div class="row"><span class="hm">18:45</span></div>
+
+<div class="row"><span class="hm">18:50</span></div>
+
+<div class="row"><span class="hm">18:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">19:00</span></div>
+
+<div class="row"><span class="hm">19:05</span></div>
+
+<div class="row"><span class="hm">19:10</span></div>
+
+<div class="row"><span class="hm">19:15</span></div>
+
+<div class="row"><span class="hm">19:20</span></div>
+
+<div class="row"><span class="hm">19:25</span></div>
+
+<div class="row"><span class="hm">19:30</span></div>
+
+<div class="row"><span class="hm">19:35</span></div>
+
+<div class="row"><span class="hm">19:40</span></div>
+
+<div class="row"><span class="hm">19:45</span></div>
+
+<div class="row"><span class="hm">19:50</span></div>
+
+<div class="row"><span class="hm">19:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">20:00</span></div>
+
+<div class="row"><span class="hm">20:05</span></div>
+
+<div class="row"><span class="hm">20:10</span></div>
+
+<div class="row"><span class="hm">20:15</span></div>
+
+<div class="row"><span class="hm">20:20</span></div>
+
+<div class="row"><span class="hm">20:25</span></div>
+
+<div class="row"><span class="hm">20:30</span></div>
+
+<div class="row"><span class="hm">20:35</span></div>
+
+<div class="row"><span class="hm">20:40</span></div>
+
+<div class="row"><span class="hm">20:45</span></div>
+
+<div class="row"><span class="hm">20:50</span></div>
+
+<div class="row"><span class="hm">20:55</span></div>
+
+
+
+
+
+<div class="row"><span class="hm">21:00</span></div>
+
+<div class="row"><span class="hm">21:05</span></div>
+
+<div class="row"><span class="hm">21:10</span></div>
+
+<div class="row"><span class="hm">21:15</span></div>
+
+<div class="row"><span class="hm">21:20</span></div>
+
+<div class="row"><span class="hm">21:25</span></div>
+
+<div class="row"><span class="hm">21:30</span></div>
+
+<div class="row"><span class="hm">21:35</span></div>
+
+<div class="row"><span class="hm">21:40</span></div>
+
+<div class="row"><span class="hm">21:45</span></div>
+
+<div class="row"><span class="hm">21:50</span></div>
+
+<div class="row"><span class="hm">21:55</span></div>
+
+
+
+</div>
+
+<div class="venue">
+    <div class="venue-name">伊藤謝恩ホール</div>
+
+<div class="talk" style="top: 180px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/3abbfeb4-ab8b-11e1-8c20-e9b36aeab6a4">オープニング</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/3904dd9e-aacc-11e1-82c5-e8996aeab6a4">941</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 284px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/40330888-db88-11e1-8417-0d4e6aeab6a4">What Does Your Code Smell Like? </a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/1d78a320-db88-11e1-86a9-001636ebe579">Larry Wall</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 544px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/aaade824-abc0-11e1-8865-57a46aeab6a4">Web::Security beyond HTML5</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/7b7d8e20-ab92-11e1-ae4c-cb516aeab6a4">Yosuke HASEGAWA</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1116px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/8ec1a6fa-abb6-11e1-b982-57a46aeab6a4">Nana/Tora - Perl5 から見える未来。Perl5 と共にあゆむ Perl6 ではないプログラミング言語、それは。 </a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/b1ddeb90-abb5-11e1-93ce-57a46aeab6a4">Tokuhiro Matsuno</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1376px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/fcc5b78c-dae5-11e1-b6d8-0d4e6aeab6a4">Perl Ocean - XMPP based realtime communication framework suite</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/b6d42d0e-dabc-11e1-b134-0d4e6aeab6a4">KOMORI Kazuki</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1480px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/6d2a5590-da3d-11e1-a317-0d4e6aeab6a4">Perl でファントムする！</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/aa8c9726-abb3-11e1-85bd-57a46aeab6a4">motemen</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[ライブラリ]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1636px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/1257b404-da07-11e1-bb59-0d4e6aeab6a4">続・Mobage を支える技術</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/86d0be72-da05-11e1-82c6-0d4e6aeab6a4">Yuji Shimada</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[アプリケーション]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1896px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/767bd582-abb3-11e1-85bd-57a46aeab6a4">位置情報系処理のお話 a.k.a 続・自文書抽出日本的住所</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/7f9ca3b4-aba2-11e1-bc84-dc8e6aeab6a4">Kazuhiro Osawa</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[アプリケーション]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2156px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/d1edd2c0-ab9b-11e1-918c-2a656aeab6a4">平均レスポンスタイム50msをPerlで捌く中規模サービスの実装/運用</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/13fa0f16-ab93-11e1-a031-cb516aeab6a4">Tatsuro Hisamori</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2416px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/3c10ee1c-abc4-11e1-af4b-ea856aeab6a4">Perlアプリケーションのベンチマークとプロファイリング</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/77f0ba64-ab94-11e1-b8bc-cb516aeab6a4">Shunichiro Fujiwara</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2676px; height: 311px">
+<div class="title">
+    <a href="/2012/talk/show/72256d20-dbad-11e1-bcf1-95936aeab6a4">Lightning Talks Day 1</a>
+    (<span class="duration">60 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/2e0727f8-aa13-11e1-91d1-418d6aeab6a4">Daisuke Maki</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+</div>
+
+<div class="venue">
+    <div class="venue-name">3F Room 1</div>
+
+<div class="talk" style="top: 544px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/405aef14-da94-11e1-a30d-0d4e6aeab6a4">Acmeism, Pegex and CoffeeScript on CPAN</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/9e05b130-da8f-11e1-8dc3-0d4e6aeab6a4">Ingy döt Net</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[ライブラリ]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1116px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/5da12cf6-adde-11e1-aff4-22926aeab6a4">rapid prototyping with Mojolicious::Lite</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/21e23c7e-addd-11e1-aa5a-22926aeab6a4">Lenz Gschwendtner</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[アプリケーション]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1220px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/4d98200c-dae4-11e1-b6d8-0d4e6aeab6a4">大きくなったシステムの疎結合化への取り組み</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/d2f45fd0-dac2-11e1-841d-0d4e6aeab6a4">Masaru Hoshino</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[アプリケーション]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1376px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/37e5eabc-d550-11e1-ace3-37a36aeab6a4">Perlと出会い、Perlを作る</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/21bb605c-d54e-11e1-bf68-37a36aeab6a4">Masaaki Goshima</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1480px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/5425192c-d411-11e1-8310-37a36aeab6a4">App::LDAP - 管理者と百台のコンピュータ</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/94a7e650-c9c1-11e1-b572-37a36aeab6a4">shelling</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1636px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/7dfaa352-afbd-11e1-9133-ef7b6aeab6a4">DBD::SQLite: Recipes, Issues, and Plans</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/9306efee-afb8-11e1-a758-ef7b6aeab6a4">Kenichi Ishigaki</a></span>
+    <span class="level">[アドバンスド]</span>
+    <span class="category">[ライブラリ]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1896px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/99d615f2-b4d6-11e1-8faa-92b46aeab6a4">Profiling memory usage of Perl applications</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/3e9ecd7a-abf6-11e1-ab7d-22926aeab6a4">Tim Bunce</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2156px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/fdb4fa30-da91-11e1-8db4-0d4e6aeab6a4">Stackato - ActiveState&#39;s new host-your-own-PaaS</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/9e05b130-da8f-11e1-8dc3-0d4e6aeab6a4">Ingy döt Net</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2416px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/96627a88-ab9d-11e1-a255-2a656aeab6a4">半リアルタイム・分散ストリーム処理をperlで</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/2847eafe-ab95-11e1-a031-cb516aeab6a4">tagomoris</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+</div>
+
+<div class="venue">
+    <div class="venue-name">3F Room 2</div>
+
+<div class="talk" style="top: 544px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/71757d4c-acc4-11e1-a17e-22926aeab6a4">pixivのサムネイル事情</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/c45312d4-abb8-11e1-b801-57a46aeab6a4">bokko</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[アプリケーション]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 648px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/82875e52-d546-11e1-b765-37a36aeab6a4">Perlでデータクリーニング</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/e161e540-ccaa-11e1-86f7-37a36aeab6a4">Toshinori Sato</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1116px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/8104edaa-b2ab-11e1-a08b-95586aeab6a4">リアルタイム通知システムの舞台裏</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/3f9c3f26-b2ab-11e1-b0c4-95586aeab6a4">しんぺい@猫型技研</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1220px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/6c329e7e-abd3-11e1-985a-22926aeab6a4">Perl初心者が作ったサーバ運用ツール</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/6eed6faa-aba0-11e1-bc68-d2846aeab6a4">りーお＠DeNA</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[インフラ・運用]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1376px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/63dbff60-b365-11e1-befb-95586aeab6a4">GitHubを使った開発とデプロイ</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/7c112460-b35c-11e1-b219-95586aeab6a4">まつけん@yokoninaritai </a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1480px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/a1368a10-db1f-11e1-ae64-0d4e6aeab6a4">Distributed Job System. Clutch</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/6f53dbc6-aacb-11e1-8b9c-91966aeab6a4">Atsushi Kobayashi</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1636px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/645d66cc-d98a-11e1-af5f-0d4e6aeab6a4">Exploring Perl 6 through its Modules</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/f9c5e7da-d989-11e1-8eba-0d4e6aeab6a4">Jonathan Worthington</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[ライブラリ]</span>
+    <span class="language">[英語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 1896px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/3a843f6e-dabc-11e1-9422-0d4e6aeab6a4">スマートフォン向けサービスにおけるサーバサイド設計入門</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/420fe28c-ab92-11e1-b8bc-cb516aeab6a4">Hisashi HATAKEYAMA</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2000px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/7b6375aa-bd29-11e1-ad51-b39f6aeab6a4">Redmine::Chan で IRC からプロジェクト管理</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/b74cee62-bd28-11e1-ad51-b39f6aeab6a4">Yasuhiro Onishi</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[ライブラリ]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2156px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/2c531ede-c1ac-11e1-860d-28556aeab6a4">不安定な環境の中でのバッチ処理～JobQueueシステムQudoを使った事例～</a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/3eaf1a42-c1a7-11e1-a8c7-28556aeab6a4">hirobanex</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2260px; height: 103px">
+<div class="title">
+    <a href="/2012/talk/show/9f29606e-c961-11e1-8b8c-37a36aeab6a4">ホームディレクトリに埋もれた便利なコードをさがせ! </a>
+    (<span class="duration">20 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/c54c0ce2-abe8-11e1-8210-22926aeab6a4">Yohei Fushii</a></span>
+    <span class="level">[ビギナー]</span>
+    <span class="category">[チュートリアル]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+<div class="talk" style="top: 2416px; height: 207px">
+<div class="title">
+    <a href="/2012/talk/show/844c1278-dad2-11e1-a1dd-0d4e6aeab6a4">Test::Moreが抱える問題点</a>
+    (<span class="duration">40 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/838e38c4-dac9-11e1-8edc-0d4e6aeab6a4">Makoto Kuwata</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[テスト]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+</div>
+
+<div class="venue">
+    <div class="venue-name">多目的スペース</div>
+
+<div class="talk" style="top: 2988px; height: 623px">
+<div class="title">
+    <a href="/2012/talk/show/dde622e2-e126-11e1-80c3-4d5c6aeab6a4">懇親会</a>
+    (<span class="duration">120 分</span>)
+</div>
+<div class="detail">
+    <span class="speaker"><a href="/2012/member/show/2e0727f8-aa13-11e1-91d1-418d6aeab6a4">Daisuke Maki</a></span>
+    <span class="level">[レギュラー]</span>
+    <span class="category">[その他]</span>
+    <span class="language">[日本語]</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><!-- section -->
+</div><!-- #main-contents -->
+
+
+<div id="sidebar">
+<div class="innerblocktop"></div>
+<div class="innerblock">
+
+<div id="sponsors" class="section">
+<h3>Sponsors</h3>
+<h4>主催</h4>
+<ul class="unstyled">
+<li>
+    <a href="http://japan.perlassociation.org" target="_blank" rel="popover" data-original-title="Japan Perl Association" data-content="ライブサイトなのにこんなところでテスト中です！許して！"><img src="/2012/static/images/sponsors/logo-jpa.png" /></a>
+</li>
+</ul>
+<h4>特別スポンサー</h4>
+<ul class="unstyled">
+<li><a href="/2012/sponsor/individual.html">個人スポンサーの皆様</a></li>
+</ul>
+<h4>スポンサー</h4>
+<ul class="unstyled">
+<!-- list -->
+<li><a href="/2012/sponsor/">YAPCスポンサー特設ページ</a></li>
+<!-- platinum -->
+<li><a href="http://www.nhncorp.jp" target="_blank"><img src="/2012/static/images/sponsors/logo-nhn.jpg" /></a></li>
+<li><a href="http://motionbeat.com" target="_blank"><img src="/2012/static/images/sponsors/logo_motionbeat.jpg" /></a></li>
+<li><a href="http://www.gaiax.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-gaiax.png" /></a></li>
+<li><a href="http://www.kddi-webcommunications.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_kwc.jpg" /></a></li>
+<li><a href="http://www.dena.ne.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-dena.png" /></a></li>
+<li><a href="http://mixi.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-mixi.png" /></a></li>
+<!-- gold -->
+<li><a href="http://www.s2factory.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-s2factory.png" /></a></li>
+<li><a href="http://www.skyarc.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_skyarc2.jpg" /></a></li>
+<li><a href="http://www.paperboy.co.jp" target="_blank"><img src="/2012/static/images/sponsors/logo_paperboy.jpg" /></a></li>
+<li><a href="http://www.mobilefactory.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-mobilefactory.png" /></a></li>
+<li><a href="http://www.wano.co.jp" target="_blank"><img src="/2012/static/images/sponsors/logo_wano.jpg" /></a></li>
+<!-- bronze -->
+<li><a href="http://www.adways.net/" target="_blank"><img src="/2012/static/images/sponsors/logo_adways.jpg" /></a></li>
+<!-- else -->
+<li><a href="http://info.cookpad.com/" target="_blank"><img src="/2012/static/images/sponsors/logo_cookpad.jpg" /></a></li>
+<li><a href="http://fout.jp/?yapc2012" target="_blank"><img src="/2012/static/images/sponsors/logo_freakout.jpg"></a></li>
+<li><a href="http://gree.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_gree.jpg" /></a></li>
+<li><a href="http://stardc.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_stardust.jpg" /></a></li>
+<li><a href="http://sourceforge.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_sourceforge.jpg"></a></li>
+<li><a href="http://www.bookscan.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_bookscan.jpg" /></a></li>
+<li><a href="http://www.oneup-inc.com/" target="_blank"><img src="/2012/static/images/sponsors/logo_oneup.jpg" /></a></li>
+<li><a href="http://www.pixiv.net/" target="_blank"><img src="/2012/static/images/sponsors/logo_pixiv.jpg" /></a></li>
+<li><a href="http://www.cb21.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_cb21.jpg" /></a></li>
+<li><a href="http://www.sixapart.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo-sixapart.png" /></a></li>
+<li><a href="http://www.hatena.ne.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_hatena.gif" /></a></li>
+<li><a href="http://smarteducation.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_smarteducation.jpg"></a></li>
+<li><a href="http://www.idac.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_idac.jpg" /></a></li>
+<li><a href="http://www.kayac.com/" target="_blank"><img src="/2012/static/images/sponsors/logo_kayac.gif" /></a></li>
+<li><a href="http://www.seesaa.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_seesaa.jpg" /></a></li>
+<li><a href="http://www.ssri.com/" target="_blank"><img src="/2012/static/images/sponsors/logo_ssri.jpg" /></a></li>
+<li><a href="http://www.lancard.com" target="_blank"><img src="/2012/static/images/sponsors/logo_lancard.jpg" /></a></li>
+<li><a href="http://www.fonfun.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_fonfun.jpg" /></a></li>
+<li><a href="http://www.booking.com/" target="_blank"><img src="/2012/static/images/sponsors/logo_bookingcom.jpg" /></a></li>
+<li><a href="http://codeiq.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_codeiq.jpg" /></a></li>
+<li><a href="http://c4sa.nifty.com" target="_blank"><img src="/2012/static/images/sponsors/logo_nifty.jpg" /></a></li>
+<!--
+<li><a href="http://www.livedoor.com/" target="_blank"><img src="/2012/static/images/sponsors/logo-livedoor.png" /></a></li>
+<li><a href="http://mtl.recruit.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_recruit.jpg" /></a></li>
+<li><a href="http://adways.net/" target="_blank"><img src="/2012/static/images/sponsors/logo_adways.jpg" /></a></li>
+<li><a href="http://gree.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_gree.jpg" /></a></li>
+<li><a href="http://www.dotcloud.com" target="_blank"><img src="/2012/static/images/sponsors/logo_dotcloud.gif" /></a></li>
+<li><a href="http://www.lancard.com" target="_blank"><img src="/2012/static/images/sponsors/logo-lancard.png" /></a></li>
+<li><a href="http://www.naver.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_naver.png" /></a></li>
+<li><a href="http://www.sakura.ad.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_sakura.gif" /></a></li>
+<li><a href="http://quan-inc.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_quan.jpg" /></a></li>
+<li><a href="http://www.commercelink.co.jp" target="_blank"><img src="/2012/static/images/sponsors/logo_commercelink.jpg" /></a></li>
+-->
+</ul>
+<h4>メディアスポンサー</h4>
+<ul class="unstyled">
+<li><a href="http://perlweekly.com/" alt="Perl Weekly newsletter"><img width="200" height="49" src="http://perlweekly.com/img/perl_weekly.png" border="0" /></a></li>
+<!--
+<li><a href="http://www.oreilly.co.jp/index.shtml" target="_blank"><img src="/2012/static/images/sponsors/logo-oreilly.png" /></a></li>
+<li><a href="http://www.gihyo.co.jp/" target="_blank"><img src="/2012/static/images/sponsors/logo_gihyo.gif" /></a></li>
+-->
+</ul>
+<h4>フォトスポンサー</h4>
+<ul class="unstyled">
+<li><a href="http://30d.jp" target="_blank"><img src="/2012/static/images/sponsors/logo_30days.gif" /></a></li>
+</ul>
+</div><!--  / .section /  -->
+
+<div class="section">
+<h3>過去のYAPC | Previous YAPCs</h3>
+<ul>
+<li><a href="/2011">YAPC::Asia Tokyo 2011</a></li>
+<li><a href="/2010">YAPC::Asia Tokyo 2010</a></li>
+<li><a href="http://conferences.yapcasia.org/ya2009">YAPC::Asia Tokyo 2009</a></li>
+<li><a href="http://conferences.yapcasia.org/ya2008">YAPC::Asia Tokyo 2008</a></li>
+<li><a href="http://tokyo2007.yapcasia.org/blog/ja/">YAPC::Asia Tokyo 2007</a></li>
+<li><a href="http://tokyo.yapcasia.org/blog/ja/">YAPC::Asia Tokyo 2006</a></li>
+</ul>
+</div><!--  / .section /  -->
+
+<div class="section">
+<h3>動画 | Videos</h3>
+<ul>
+<li><a href="http://video.yapcasia.org" target="_blank">http://video.yapcasia.org</a></li>
+</ul>
+</div><!--  / .section /  -->
+
+<div class="section">
+<h3>写真 | Photos</h3>
+<ul>
+<li><a href="/2012/photos" target="_blank">YAPC::Asia Tokyo 2012</a> NEW!</li>
+<li><a href="/2011/photos" target="_blank">YAPC::Asia Tokyo 2011</a></li>
+<li><a href="/2010/photos" target="_blank">YAPC::Asia Tokyo 2010</a></li>
+<li><a href="/2009/photos" target="_blank">YAPC::Asia Tokyo 2009</a></li>
+</ul>
+</div><!--  / .section /  -->
+
+<div class="section">
+<h3>IRC/Tags</h3>
+<p>公式タグ、ハッシュタグは <em><span>yapcasia</span></em> を使用してください。ブックマーク、ブログ、写真等のタグ、そしてTwitterでご使用いただけると情報共有に便利です。年度を特定したい場合は <em>yapcasia2012</em> でも結構ですが、<em>yapcasia</em>と併用してくださると助かります。</p>
+<p>また、IRCは freenode上の <em>#yapcasia-en</em> (英語)と <em>#yapcasia-ja</em> です。</p>
+</div><!--  / .section /  -->
+
+</div><!--  / .innerblock /  -->
+</div><!--  / #sidebar /  -->
+
+
+</div><!--  / #container /  -->
+
+<div id="footer">
+<div class="innerblock">
+<address>© 2012 <a href="http://japan.perlassociation.org/" target="_blank">Japan Perl Association</a></address>
+<p>Powered by <a href="http://www.cloudcore.jp/" target="_blank">CloudCore</a> and <a href="http://www.sixapart.jp/movabletype/" target="_blank">Movable Type</a></p>
+</div>
+</div><!--  / #footer /  -->
+
+<script src="/2012/static/js/functions.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30362939-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
+
