@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>YAPC::Asia Tokyo 2015</title>
+<title>Nathan LeClaire's Page - YAPC::Asia Tokyo 2015</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="世界最大、最強！YAPC::Asia Tokyoのフィナーレ！">
 <meta name="keywords" content="YAPC::Asia,YAPC,ヤプシー,Perl,PM,Japan Perl Association,JPA">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@yapcasia">
 <meta property="fb:app_id" content="144267325643659" />
-<meta property="og:title" content="Nathan LeClaire's Page - YAPC::Asia Tokyo 2014"/>
+<meta property="og:title" content="Nathan LeClaire's Page - YAPC::Asia Tokyo 2015"/>
 <meta property="og:type" content="article"/>
-<meta property="og:image" content="/2015/assets/iamges/2015ogp.png" />
+<meta property="og:image" content="https://yapcasia.org/2015/assets/iamges/2015ogp.png" />
 <meta property="og:site_name" content="YAPC::Asia Tokyo 2015"/>
 <meta property="og:description" content="世界最大、最強！YAPC::Asia Tokyoのフィナーレ！" />
 
@@ -20,7 +20,7 @@
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <link rel="shortcut icon" href="/2015/assets/images/favicon.ico">
 <link rel="stylesheet" href="/2015/assets/css/style.css" />
-<link rel="alternate" type="application/atom+xml" title="YAPC::Asia Tokyo 2015 Latst News" href="/2015//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="YAPC::Asia Tokyo 2015 Latst News" href="https://yapcasia.org/2015//atom.xml">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -37,6 +37,15 @@
 <h1><a href="/2015/"><img src="/2015/assets/images/header_logo.png" alt="YAPC::Asia Tokyo 2015" /></a></h1>
 </div><!--  / .innerblock /  -->
 </div><!--  / #header /  -->
+
+<style>
+<!--
+    ul{
+        margin-bottom:1em;
+    }
+-->
+</style>
+
 </header>
 
 
@@ -64,6 +73,9 @@
         width: 70px;
         height: 70px;
     }
+
+    .list ul { list-style-type: disc; padding-left: 2em; margin-bottom:1em; }
+
 -->
 </style>
 
@@ -73,26 +85,31 @@
     <div class="speaker">
         <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
 </div>
-        <p class="name"><a href="/2015/member/show/ea77e896-0659-11e5-9492-79c97d574c3a">Nathan LeClaire</a></p>
+        <p class="name"><a href="/2015/member/show/ea77e896-0659-11e5-9492-79c97d574c3a">Nathan LeClaire</a>
+        
+        </p>
     
     </div>
 
-                <div style="margin-left: 80px">
+                <div class="list" style="margin-left: 80px">
     
 
                     <h4>Talks Submitted by Nathan LeClaire</h4>
 
     
+    <ul>
     
-                    <ul>
+                    <li>
+                      <a href="/2015/talk/show/21cb8176-065b-11e5-9492-79c97d574c3a">
+                        
 
+                        PolyglotのためのDocker - 我々はどこから来てどこへ向かうのか
+                      </a> (Accepted)
+                      
+                    </li>
     
-                      <li>
-                        <a href="/2015/talk/show/21cb8176-065b-11e5-9492-79c97d574c3a">PolyglotのためのDocker - 我々はどこから来てどこへ向かうのか</a> (Accepted)
-                      </li>
-    
-                    </ul>
-    
+    </ul>
+
     
 
     
@@ -101,7 +118,30 @@
 
                 </div>
 
+<script type="text/javascript">
+                <!--
+                    $(document).ready( function() {
+                        $("#talk-confirm").click( function() {
+                            if (! confirm("Are you sure you're ready to confirm the accepted talk?")) {
+                                return false;
+                            }
 
+                            $.ajax({
+                                type: "POST",
+                                url: $("#talk-confirm").attr("href"),
+                                success: function() {
+                                    alert("Talk has been confirmed");
+                                    location.href = "/2015/member";
+                                },
+                                error: function() {
+                                    alert("Error confirming the talk");
+                                }
+                            });
+                            return false;
+                        });
+                    });
+                -->
+</script>
 
 
 
@@ -121,10 +161,14 @@
 <ul class="dropdown">
 <li><a href="/2015/">Home</a></li>
 <li><a href="/2015/about/">About</a></li>
+<li><a href="/2015/news/06/regular-tickets-are-on-sale.html">Tickets</a></li>
 <li><a href="/2015/talk/list">Talks</a></li>
 <li><a href="/2015/sponsors/">Sponsors</a></li>
+<li><a href="/2015/individual_sponsors/">Individual Sponsors</a></li>
+<li><a href="/2015/network.html">Network</a></li>
 <li><a href="/2015/news/">News</a></li>
 <li><a href="/2015/member">My Page</a></li>
+<li><a href="/2015/staff/">Staff</a></li>
 
 
 </ul>
@@ -180,19 +224,19 @@
 <!--
     $([
         {
-            src: "http://b.st-hatena.com/js/bookmark_button.js",
+            src: "https://b.st-hatena.com/js/bookmark_button.js",
             id: "hatena-bookmark"
         },
         {
-            src: "http://static.mixi.jp/js/plugins.js#lang=ja",
+            src: "https://static.mixi.jp/js/plugins.js#lang=ja",
             id: "mixi-check"
         },
         {
-            src: "http://platform.twitter.com/widgets.js",
+            src: "https://platform.twitter.com/widgets.js",
             id: "twitter-wjs"
         },
         {
-            src: "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&appId=144267325643659",
+            src: "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&appId=144267325643659",
             id: "facebook-jssdk"
         },
         {
