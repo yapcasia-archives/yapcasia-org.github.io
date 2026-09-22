@@ -1,0 +1,2452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Talks - YAPC::Asia Tokyo 2014</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<meta name="keywords" content="YAPC::Asia,YAPC,ヤプシー,Perl,PM,Japan Perl Association,JPA">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@yapcasia">
+<meta property="fb:app_id" content="144267325643659" />
+<meta property="og:title" content="Talks - YAPC::Asia Tokyo 2014">
+<meta property="og:site_name" content="YAPC::Asia Tokyo 2014">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yapcasia.org/2014/static/images/ogp_icon_350px.png">
+<meta property="og:description" content="">
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="shortcut icon" href="https://yapcasia.org/2014/static/images/favicon.ico">
+<link rel="stylesheet" href="https://yapcasia.org/2014/static/css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<a id="top" name="top"></a>
+<div id="wrapper">
+
+<div id="goto-mobile" style="display:none;">
+  <div class="innerblock" style="width:100%">
+    <a href="https://yapcasia.org/2014/talk/schedule?format=mobile" style="margin:0 auto 20px;display:block;width:90%;" class="btn btn-primary btn-lg">Mobile Schedule Viewer is Here</a>
+  </div>
+</div>
+
+
+<header id="header-main">
+<div class="innerblock">
+<h1><a href="https://yapcasia.org/2014/"><img src="https://yapcasia.org/2014/static/images/logo_l.png" alt="YAPC::Asia Tokyo 2014" width="375" /></a></h1>
+<h2><img src="https://yapcasia.org/2014/static/images/header_date_l.png" alt="Aug. 28, 29, 30 at KEIO Univ. Hiyoshi Campus [There Is More Than One Way To Enjoy It!]" width="520" /></h2>
+</div>
+</header>
+
+<header id="header-navi">
+<div class="innerblock">
+<nav>
+<div class="gnavi">
+<div class="btn-menu"><a href="javascript:void(0);"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div><!--  / .btn-menu /  -->
+<ul class="dropdown">
+<li class="navi1"><a href="https://yapcasia.org/2014/">Home</a></li>
+<li class="navi2"><a href="https://yapcasia.org/2014/about/">About</a></li>
+<li class="navi3"><a href="https://yapcasia.org/2014/talk/">Talk</a></li>
+<li class="navi4"><a href="https://yapcasia.org/2014/sponsor/">Sponsor</a></li>
+<li class="navi5"><a href="https://yapcasia.org/2014/news/">News</a></li>
+<li class="navi6"><a href="https://yapcasia.org/2014/individual_sponsors/">Individual Sponsors</a></li>
+<li class="navi7"><a href="https://yapcasia.org/2014/network/">Network</a></li>
+
+<li class="navi8"><a href="/2014/member/">My Page</a></li>
+
+</ul>
+</div><!--  / #gnavi /  -->
+</nav>
+<div class="social-button">
+<div class="twitter"><a href="https://twitter.com/yapcasia" title="Twitter" target="_blank">Twitter</a></div>
+<div class="facebook"><a href="https://www.facebook.com/yapcasia" title="Facebook" target="_blank">Facebook</a></div>
+<div class="youtube"><a href="http://video.yapcasia.org" title="YouTube" target="_blank" alt="Videos from YAPC::Asia Tokyo 2012 and previous years">YouTube</a></div>
+<div class="thirtydays"><a href="https://yapcasia.org/2013/photos" title="30days" target="_blank" alt="Photos From YAPC::Asia Tokyo 2013">30days</a></div>
+</div><!--  / .social-button /  -->
+</div>
+</header>
+
+
+
+<section>
+<div class="section">
+<h1 class="title">
+<div class="innerblock">
+<span class="icon-jp_icon_paper_fan"></span> <em>Talk</em></div>
+</h1>
+<div class="body">
+<div class="innerblock">
+
+
+<style type="text/css">
+<!--
+    .talk .speaker .name {
+        margin-top:4px;
+        font-size: 0.8em;
+        line-height:1.4;
+        width: 70px;
+        word-wrap: break-word
+    }
+
+    .talk .speaker .icon { width: 70px; height: 70px }
+    .talk .speaker .icon img {
+        width: 70px;
+        height: 70px;
+    }
+    .talk {
+        margin-bottom:3em;
+        clear: both;
+    }
+
+    @media screen and (min-width:641px){
+        .talk .speaker {
+            float: left;
+        }
+        .talk .speaker-sp {
+            display: none;
+        }
+        .talk .details {
+            margin-left: 80px;
+            font-size: 0.85em;
+        }
+    }
+
+    @media screen and (max-width:640px){
+        .talk .speaker {
+            display: none;
+        }
+        .talk .details {
+            font-size: 0.85em;
+        }
+    }
+
+    .talk .details .title {
+        padding: 5px;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    div.social-buttons {
+        float: right;
+    }
+    div.social-buttons .button-mixi {
+        vertical-align: top;
+        margin-left: 1em;
+        display: inline-block;
+    }
+    div.social-buttons .button-hatebu {
+        vertical-align: top;
+        margin-left: 1em;
+        display: inline-block;
+    }
+    div.social-buttons .button-fblike {
+        vertical-align: top;
+        width: 100px;
+        height: 20px;
+        display: inline-block;
+    }
+-->
+</style>
+
+
+
+<div>
+<h2>トークスケジュール</h2>
+<a href="/2014/talk/schedule?date=2014-08-28" class="btn btn-lg btn-info">前夜祭 (8/28)</a>
+<a href="/2014/talk/schedule?date=2014-08-29" class="btn btn-lg btn-info">1日目 (8/29)</a>
+<a href="/2014/talk/schedule?date=2014-08-30" class="btn btn-lg btn-info">2日目 (8/30)</a>
+</div>
+<br />
+
+<ul><li><strong><a href="/2014/vote/ballot">ベストトークへの投票</a></strong></li></ul>
+
+<hr />
+
+<div class="entry">
+  <div class="entry-contents">
+    <h2>トーク一覧</h2>
+    <br />
+
+
+
+
+    <h3>採用されたトーク (58)</h3>
+    <br />
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/364f4aec-f1e4-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/250407?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/364f4aec-f1e4-11e3-b7e8-e4a96aeab6a4">Toru Kobayashi</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/364f4aec-f1e4-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/250407?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/364f4aec-f1e4-11e3-b7e8-e4a96aeab6a4">Toru Kobayashi</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/bc6052f4-0c8b-11e4-aec0-ad686aeab6a4">YAPC::Asia Tokyo 2014 前夜祭</a> (150 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/bc6052f4-0c8b-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <hr />
+
+<h3>欲しいものは作ればいい！ 〜Webアプリ10連発〜</h3>
+
+<p>YAPC恒例の前夜祭、今年はWebアプリケーションを作っている方にそのノウハウやこだわり、楽しさを語って頂くイベントを開催致します。</p>
+
+<p>Webアプリケーションを作ることって使ってもらう嬉...</p>
+
+<p><a href="/2014/talk/show/bc6052f4-0c8b-11e4-aec0-ad686aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/1ebc2e92-0c68-11e4-aec0-ad686aeab6a4">YAPC::Asia 2014 Tokyo - オープニング</a> (10 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/1ebc2e92-0c68-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Let's start a YAPC::Asia 2014 Tokyo!</p>
+
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/20fe9a5e-030e-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/67900?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/20fe9a5e-030e-11e4-9357-07b16aeab6a4">Abigail</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/20fe9a5e-030e-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/67900?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/20fe9a5e-030e-11e4-9357-07b16aeab6a4">Abigail</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/a3a6ede4-030e-11e4-9357-07b16aeab6a4">Releasing perl</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/a3a6ede4-030e-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>For many years, perl releases were infrequent, with a single person
+(the "pumpking") responsible for several subsequent releases.</p>
+
+<p>Thi...</p>
+
+<p><a href="/2014/talk/show/a3a6ede4-030e-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/a2f46b2c-fb54-11e3-b7e8-e4a96aeab6a4"><img src="http://graph.facebook.com/100001093531590/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/a2f46b2c-fb54-11e3-b7e8-e4a96aeab6a4">Satoshi Suzuki</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/a2f46b2c-fb54-11e3-b7e8-e4a96aeab6a4"><img src="http://graph.facebook.com/100001093531590/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/a2f46b2c-fb54-11e3-b7e8-e4a96aeab6a4">Satoshi Suzuki</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/df196eac-fb65-11e3-b7e8-e4a96aeab6a4">インフラエンジニア(狭義)は死んだ</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/df196eac-fb65-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>※ 本トークにおける「インフラエンジニア」は、運用エンジニアでありながら、プログラミングに関連すること一切を、自らの選択によって放棄してしまっている人を指します  </p>
+
+<p>IT系エンジニア(広義)を世代ごとに分類すると、おおまかに以下のようになると思いま...</p>
+
+<p><a href="/2014/talk/show/df196eac-fb65-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/b53b2a6e-ebff-11e3-bd6d-c7a06aeab6a4">ファッションポエム</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/b53b2a6e-ebff-11e3-bd6d-c7a06aeab6a4">ファッションポエム</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/103a434e-ec02-11e3-bd6d-c7a06aeab6a4">Perl meets Real World 〜ハードウェアと恋に落ちるPerlの使い方〜</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/103a434e-ec02-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Perlといえば電子の世界に閉じたプログラムを書かれる方が多いと思われますが、その対極に位置すると思われていた現実世界に干渉しうるハードウェアプログラミングの分野が、ここ最近かなりウェブ系技術に接近しています。</p>
+
+<p>そこでこのトークでは、いかにPerlやカジュアルなツール...</p>
+
+<p><a href="/2014/talk/show/103a434e-ec02-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/57a054ae-ed50-11e3-b82e-98666aeab6a4"><img src="https://avatars.githubusercontent.com/u/1315074?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/57a054ae-ed50-11e3-b82e-98666aeab6a4">Kenji Naito</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/57a054ae-ed50-11e3-b82e-98666aeab6a4"><img src="https://avatars.githubusercontent.com/u/1315074?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/57a054ae-ed50-11e3-b82e-98666aeab6a4">Kenji Naito</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/4c7651e8-ed53-11e3-9faf-6ba36aeab6a4">完成されたシステムなどない。完成された人間もいない。あるのは成長し続ける未完成なシステムと、それを支える未完成な人間だけだ</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/4c7651e8-ed53-11e3-9faf-6ba36aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <hr />
+
+<h3>何故話すのか</h3>
+
+<p>大企業も昔は色々な苦労を体験して成長されてきたんだな、ということを体験して <br />
+その経験談を体系的に自分の中でまとめたいことが理由です。 <br />
+頭ではなく、体験して、心で理解したことをお話しします。 <br />
+このトークが誰かのお役に...</p>
+
+<p><a href="/2014/talk/show/4c7651e8-ed53-11e3-9faf-6ba36aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/c3decd0a-ebaa-11e3-bd6d-c7a06aeab6a4">Dan Kogai</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/c3decd0a-ebaa-11e3-bd6d-c7a06aeab6a4">Dan Kogai</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/4a5af014-ebad-11e3-bd6d-c7a06aeab6a4">Introducing Swift - and the Sunset of Our Culture?</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/4a5af014-ebad-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Apple recently released a language called Swift.  As a language it appears to be the best of both worlds -- a script language that emits ...</p>
+
+<p><a href="/2014/talk/show/4a5af014-ebad-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/738956136/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4">Daisuke Maki</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/738956136/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4">Daisuke Maki</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/2276d7b2-eba7-11e3-bd6d-c7a06aeab6a4">Go For Perl Mongers</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/2276d7b2-eba7-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>しばらくGoを書いてきて、GoはPerlを使っている人たちにとってとても相性のよい言語だと思うようになりました。 Perlでは手が届かないかゆいところに手が届くし、速いし、バイナリを作って設置するのも簡単です。 しかしながらGoを書き始めるにあたっては多少それまでPerlや...</p>
+
+<p><a href="/2014/talk/show/2276d7b2-eba7-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/3230a75e-0318-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/14398?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/3230a75e-0318-11e4-9357-07b16aeab6a4">Yusuke Yanbe</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/3230a75e-0318-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/14398?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/3230a75e-0318-11e4-9357-07b16aeab6a4">Yusuke Yanbe</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/2718b8f2-0331-11e4-9357-07b16aeab6a4">最近のウェブサービスの検索機能やその先の話</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/2718b8f2-0331-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>本トークでは、<a href="http://www.elasticsearch.org">Elasticsearch</a>という検索ミドルウェアを利用して、ウェブサービスの機能性を進化させる話をします。</p>
+
+<p>Elasticsearchは、他の検索ミドルウェアに対して、そのAPIファーストの...</p>
+
+<p><a href="/2014/talk/show/2718b8f2-0331-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/e4522282-02c8-11e4-9357-07b16aeab6a4"><img src="http://graph.facebook.com/100000725317390/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/e4522282-02c8-11e4-9357-07b16aeab6a4">Naoki Shimizu</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/e4522282-02c8-11e4-9357-07b16aeab6a4"><img src="http://graph.facebook.com/100000725317390/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/e4522282-02c8-11e4-9357-07b16aeab6a4">Naoki Shimizu</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/4d4a9af6-02d0-11e4-9357-07b16aeab6a4">JSON SchemaとAPIテスト</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/4d4a9af6-02d0-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>JSONのデータ構造を記述するための仕様・枠組みである<a href="http://json-schema.org/">JSON Schema</a>が流行りつつあります。</p>
+
+<p>私の周りでも、多くのAPIの仕様がJSON Schemaで記述されるようになりました。</p>
+
+<p>このTalkでは、S...</p>
+
+<p><a href="/2014/talk/show/4d4a9af6-02d0-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/e996b0b0-eba7-11e3-bd6d-c7a06aeab6a4">Tokuhiro Matsuno</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/e996b0b0-eba7-11e3-bd6d-c7a06aeab6a4">Tokuhiro Matsuno</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/66c55626-eba9-11e3-bd6d-c7a06aeab6a4">お待たせしました。Perl で BDD を簡単に実践する最高にクールなフレームワークができました</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/66c55626-eba9-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>私は過去に Test::TCP, Test::SharedFork, Test::Power, Test::Pretty... たくさんのテストを便利にするモジュールを書いてきました。これらのモジュールは Test::Builder の上に構築されております。
+我々は、 ...</p>
+
+<p><a href="/2014/talk/show/66c55626-eba9-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/40df4d0e-027e-11e4-9357-07b16aeab6a4">アルパカ大明神[▮▮▮▯▯▯▯▯▯▯]</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/40df4d0e-027e-11e4-9357-07b16aeab6a4">アルパカ大明神[▮▮▮▯▯▯▯▯▯▯]</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/9e3ced48-027f-11e4-9357-07b16aeab6a4">作られては消えていく、泡のように儚いクラスタの運用話</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/9e3ced48-027f-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>弊社ではTV連動用BaaSとして<a href="https://www.bascule-go.com/product/">MIES</a>というシステムを開発／運用しています。 <br />
+TV連動という特殊なサービスということもあり、 <br />
+本番数時間前にサーバを一気に数百台起動し、終了後には削除...</p>
+
+<p><a href="/2014/talk/show/9e3ced48-027f-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/54dfaa48-f0b7-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/356110?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/54dfaa48-f0b7-11e3-b7e8-e4a96aeab6a4">Peter Rabbitson</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/54dfaa48-f0b7-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/356110?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/54dfaa48-f0b7-11e3-b7e8-e4a96aeab6a4">Peter Rabbitson</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/3c896370-01de-11e4-9357-07b16aeab6a4">DBIx::Class - what is it and what is it good for?</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/3c896370-01de-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>DBIx::Class is a widely used and just as widely misunderstood SQL metaprogramming framework (no, it is not an ORM, it just plays one on T...</p>
+
+<p><a href="/2014/talk/show/3c896370-01de-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/1b1cfd58-ebb0-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/1422834?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/1b1cfd58-ebb0-11e3-bd6d-c7a06aeab6a4">Taiki Kawakami</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/1b1cfd58-ebb0-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/1422834?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/1b1cfd58-ebb0-11e3-bd6d-c7a06aeab6a4">Taiki Kawakami</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/6e5b28f4-0191-11e4-b7e8-e4a96aeab6a4">Perl::Lint - Yet Another Perl Source Code Linter</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/6e5b28f4-0191-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>(日本語は下にあります / Japanese follows English)</p>
+
+<p>Hello, every Perl mongers! <br />
+Do you use  [Perl::Critic](http://search.cpan.org/~thaljef/Perl-...</p>
+
+<p><a href="/2014/talk/show/6e5b28f4-0191-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/5634f2f8-033c-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/8465?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/5634f2f8-033c-11e4-9357-07b16aeab6a4">motemen</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/5634f2f8-033c-11e4-9357-07b16aeab6a4"><img src="https://avatars.githubusercontent.com/u/8465?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/5634f2f8-033c-11e4-9357-07b16aeab6a4">motemen</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/a88619fc-034a-11e4-9357-07b16aeab6a4">Git を使ったツール開発</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/a88619fc-034a-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Git は最近の開発においてはとてもポピュラーなツールです。業務で利用していなくても今や多くの CPAN モジュールが開発の場を GitHub としていることからも、Perl Monger には欠かせないものの一つとなっています。かゆい所に手が届くツールを自作できれば、Gi...</p>
+
+<p><a href="/2014/talk/show/a88619fc-034a-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/ab461ae0-030c-11e4-9357-07b16aeab6a4"><img src="http://graph.facebook.com/100002191918053/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/ab461ae0-030c-11e4-9357-07b16aeab6a4">Masahiro Iuchi</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/ab461ae0-030c-11e4-9357-07b16aeab6a4"><img src="http://graph.facebook.com/100002191918053/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/ab461ae0-030c-11e4-9357-07b16aeab6a4">Masahiro Iuchi</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/b84fbdac-0313-11e4-9357-07b16aeab6a4">Windows ユーザーのための Perl による Web アプリケーション開発チュートリアル</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/b84fbdac-0313-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Windows しか使った事がない Perl 初心者にとって Web アプリケーションを開発して公開するまでというのは、情報が少なかったりまとまっていなかったりするために、大変長く険しい道のりになってしまうのではないでしょうか。</p>
+
+<p>学生時代に使っていた PC しか持って...</p>
+
+<p><a href="/2014/talk/show/b84fbdac-0313-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/ee894186-fdd2-11e3-b7e8-e4a96aeab6a4">hakobe</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/ee894186-fdd2-11e3-b7e8-e4a96aeab6a4">hakobe</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/d557ddbe-fde4-11e3-b7e8-e4a96aeab6a4">Scala In Perl Company : Hatena</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/d557ddbe-fde4-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>はてなでベータ版を提供中のサーバ管理サービスである<a href="https://mackerel.io">Mackerel</a>は、サーバサイドをScalaを使って実装しています。</p>
+
+<p>このトークでは、10年あまりPerlを利用してきたはてなが、なぜ新たな開発言語としてScalaを選択し...</p>
+
+<p><a href="/2014/talk/show/d557ddbe-fde4-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/2d9ec3ea-0360-11e4-8b1d-94a36aeab6a4"><img src="https://avatars.githubusercontent.com/u/4970?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/2d9ec3ea-0360-11e4-8b1d-94a36aeab6a4">Kang-min Liu</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/2d9ec3ea-0360-11e4-8b1d-94a36aeab6a4"><img src="https://avatars.githubusercontent.com/u/4970?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/2d9ec3ea-0360-11e4-8b1d-94a36aeab6a4">Kang-min Liu</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/f028bcea-0b53-11e4-aec0-ad686aeab6a4">One layer down below.</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/f028bcea-0b53-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Programming within frameworks is fun, but breaking frameworks is
+funnier. I will show cases where we built a framework for making
+thing...</p>
+
+<p><a href="/2014/talk/show/f028bcea-0b53-11e4-aec0-ad686aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/bf86f284-0273-11e4-9357-07b16aeab6a4">Taichi Nakashima</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/bf86f284-0273-11e4-9357-07b16aeab6a4">Taichi Nakashima</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/b49cc53a-027b-11e4-9357-07b16aeab6a4">コマンドラインツールについて語るときに僕の語ること</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/b49cc53a-027b-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>(日本語は下にあります / Japanese follows English)</p>
+
+<p>We, engineer, live in Terminal. Terminal is our world. We can change our world. We can also ch...</p>
+
+<p><a href="/2014/talk/show/b49cc53a-027b-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/f79db94a-ebc7-11e3-bd6d-c7a06aeab6a4">Atsushi Kato</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/f79db94a-ebc7-11e3-bd6d-c7a06aeab6a4">Atsushi Kato</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/99e9e45c-f16e-11e3-b7e8-e4a96aeab6a4">継続的翻訳活動をささえる技術</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/99e9e45c-f16e-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>10年以上前からPerlのドキュメント翻訳に関わっていますが、その経験を元に作っている継続的な翻訳を行うための tran というアプリケーションをPerlで書いていますが、その紹介になります。
+tran を使うと</p>
+
+<ul>
+<li>Perlのドキュメント、 一般のWeb Page...</li>
+</ul>
+
+<p><a href="/2014/talk/show/99e9e45c-f16e-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/558507a2-ec63-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/6506765?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/558507a2-ec63-11e3-bd6d-c7a06aeab6a4">青猫</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/558507a2-ec63-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/6506765?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/558507a2-ec63-11e3-bd6d-c7a06aeab6a4">青猫</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/fb55d99c-fde1-11e3-b7e8-e4a96aeab6a4">DeNAが歩んだデプロイ自動化への道</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/fb55d99c-fde1-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>本発表では、アプリケーションのデプロイ自動化を本質的な目標と捉え、 <br />
+DeNAで実際に運用している開発・リリースプロセスとその構築過程についてご紹介します。</p>
+
+<ul>
+<li>なぜデプロイを自動化するのか</li>
+<li>アプリケーションが動作する環境を容易に構築・管理する</li>
+<li>テスト...</li>
+</ul>
+
+<p><a href="/2014/talk/show/fb55d99c-fde1-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/9fa0bfc0-ec68-11e3-bd6d-c7a06aeab6a4">CONBU</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/9fa0bfc0-ec68-11e3-bd6d-c7a06aeab6a4">CONBU</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/d1f29686-edeb-11e3-b7e8-e4a96aeab6a4">YAPC::Asia2014会場ネットワークのツクリカタ</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/d1f29686-edeb-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>YAPC::Asia2014をはじめとした、さまざまなIT系カンファレンス開催における課題の一つに、会場へのネットワーク提供があります。特にYAPC::Asiaのように参加者１０００人を超えする規模、のネットワーク提供は、人、機材、コストなどの様々な壁をクリアしなければいけ...</p>
+
+<p><a href="/2014/talk/show/d1f29686-edeb-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/302d1ed4-ebb1-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3458?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/302d1ed4-ebb1-11e3-bd6d-c7a06aeab6a4">Kentaro Kuribayashi</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/302d1ed4-ebb1-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3458?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/302d1ed4-ebb1-11e3-bd6d-c7a06aeab6a4">Kentaro Kuribayashi</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/ce831248-ebb4-11e3-bd6d-c7a06aeab6a4">いろんな言語を適材適所で使おう</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/ce831248-ebb4-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>サービスを提供するシステムがますます複雑化していく昨今、そのための問題解決に用いられるプログラミング言語の選択肢もまた、多様化しています。そのような中で、Perlに関しても私たちひとりひとりのユーザにおいて、その位置付けを見直し続けているという現状ではないでしょうか。</p>
+
+<p>...</p>
+
+<p><a href="/2014/talk/show/ce831248-ebb4-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/ca29b462-0253-11e4-9357-07b16aeab6a4">Lyo Kato</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/ca29b462-0253-11e4-9357-07b16aeab6a4">Lyo Kato</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/75894e02-025f-11e4-9357-07b16aeab6a4">O2O/IoT/Wearable時代におけるWeb以外のネットワーク技術入門</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/75894e02-025f-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>O2O/IoT/Wearableといった用語がよく見かけられるようになってきました。
+バズワードに流されず、その下にある技術の特徴を抑え、
+適切なサービス設計をしていく事が必要になってきています。</p>
+
+<p>iBeaconでも利用されるBluetooth LEや、IBMが提...</p>
+
+<p><a href="/2014/talk/show/75894e02-025f-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/d9b2d08e-f2f5-11e3-b7e8-e4a96aeab6a4">yoku0825</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/d9b2d08e-f2f5-11e3-b7e8-e4a96aeab6a4">yoku0825</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/e495bc1a-f30d-11e3-b7e8-e4a96aeab6a4">WHERE狙いのキー、ORDER BY狙いのキー</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/e495bc1a-f30d-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <ul>
+<li>MySQLの"WHERE狙いのキー", "ORDER BY狙いのキー"をPerlのコードっぽく解説します</li>
+<li>なぜ"Using where; Using filesort"が遅いのか、コードっぽく表現すると「そりゃ遅いわ」</li>
+<li>なんで遅いのか知らない、どうやって解消...</li>
+</ul>
+
+<p><a href="/2014/talk/show/e495bc1a-f30d-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/c7efab78-edfb-11e3-b7e8-e4a96aeab6a4">Hideaki Ohno</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/c7efab78-edfb-11e3-b7e8-e4a96aeab6a4">Hideaki Ohno</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/804bd4a8-edfc-11e3-b7e8-e4a96aeab6a4">自然言語処理を支える技術 〜要素技術とPerlの活用〜</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/804bd4a8-edfc-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>よくテキスト処理はPerlの得意分野と言われており、ログ解析やWebスクレイピングなどで活躍しています。 
+では、自然言語のテキスト処理はどうでしょうか？</p>
+
+<p>ということで、本トークでは自然言語処理の理論的なことについてはあまり触れず、自然言語処理(主にテキスト解析の分...</p>
+
+<p><a href="/2014/talk/show/804bd4a8-edfc-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/2d7a17a2-00ae-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/7350120?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/2d7a17a2-00ae-11e4-b7e8-e4a96aeab6a4">Hideyo Imazu</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/2d7a17a2-00ae-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/7350120?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/2d7a17a2-00ae-11e4-b7e8-e4a96aeab6a4">Hideyo Imazu</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/6cddba94-00b7-11e4-b7e8-e4a96aeab6a4">TWiki − Perlで書かれたプログラマブルでglueでスケーラブルなCMS</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/6cddba94-00b7-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>twiki.orgという1998年から続いているオープンソースのウィキプラットフォームがありまして、それをモルガン・スタンレー証券のIT部門でグローバルに2004年から運用して単一のインストールに1万のウィキサイト、総計100万ページが載るに至り、その過程でオープンソースに...</p>
+
+<p><a href="/2014/talk/show/6cddba94-00b7-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/e121a562-e7b4-11e3-8292-e7826aeab6a4">Yoshimitsu Torii</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/e121a562-e7b4-11e3-8292-e7826aeab6a4">Yoshimitsu Torii</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/250b85d0-02a0-11e4-9357-07b16aeab6a4">Mojoliciousを使ったwebアプリケーション開発 実践編</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/250b85d0-02a0-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>近年、PerlでWebアプリを作る環境はとても恵まれています。
+PerlBeginner向けの講座(Perl入学式)や入門記事なども豊富に公開されており、
+Amon2やMojoliciousなどのWAFを使えば、簡単にWebアプリを実装することができるようになりました。...</p>
+
+<p><a href="/2014/talk/show/250b85d0-02a0-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/ad3075bc-ebb5-11e3-bd6d-c7a06aeab6a4">Kenichi Ishigaki</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/ad3075bc-ebb5-11e3-bd6d-c7a06aeab6a4">Kenichi Ishigaki</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/e35ec49a-ebba-11e3-bd6d-c7a06aeab6a4">Get a kick out of CPAN</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/e35ec49a-ebba-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>One of the topics at the QA hackathon 2014 was CPAN gamification to keep you interested in CPAN and perl in general. I'll introduce some ...</p>
+
+<p><a href="/2014/talk/show/e35ec49a-ebba-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/51fb2268-ebac-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3092?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/51fb2268-ebac-11e3-bd6d-c7a06aeab6a4">cho45</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/51fb2268-ebac-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3092?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/51fb2268-ebac-11e3-bd6d-c7a06aeab6a4">cho45</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/aed8a03c-ebac-11e3-bd6d-c7a06aeab6a4">ウェッブエンジニアのローレベルプログラミング</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/aed8a03c-ebac-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>ウェブ系のことをしていると、設計方法など抽象化された概念との戦いが多い。実際の CPUとメモリの動作をよく知らなくとも、それなりのコードが書けてしまうため、低レイヤーを意識することが少なくなり、低レイヤーに苦手意識を持ってしまいがちになる。</p>
+
+<p>本セッションでは、低レイヤ...</p>
+
+<p><a href="/2014/talk/show/aed8a03c-ebac-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/e1e793ae-0347-11e4-9357-07b16aeab6a4">Shohei Kameda</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/e1e793ae-0347-11e4-9357-07b16aeab6a4">Shohei Kameda</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/6687aaca-034a-11e4-9357-07b16aeab6a4">How&#39;s startup life? - working as CTO in Japan</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/6687aaca-034a-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>I joined to a startup company, Actie Inc,  in March 2014. In this talk, I will explain about what i've experienced in the past months and...</p>
+
+<p><a href="/2014/talk/show/6687aaca-034a-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/a97856f0-0349-11e4-9357-07b16aeab6a4">大西康裕</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/a97856f0-0349-11e4-9357-07b16aeab6a4">大西康裕</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/4d0289d0-034a-11e4-9357-07b16aeab6a4">開発合宿！！！！</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/4d0289d0-034a-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>株式会社はてなでは開発合宿を積極的に行っています。</p>
+
+<p>皆様御存知のはてなブックマークも少人数の開発合宿から生まれました。他にも、ほとんどのエンジニアが参加する大規模な合宿など様々な試みを実施しています。</p>
+
+<p>本トークでは、</p>
+
+<ul>
+<li>開発合宿の意義</li>
+<li>はてなにおけ...</li>
+</ul>
+
+<p><a href="/2014/talk/show/4d0289d0-034a-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/ae8d7e4e-024b-11e4-9357-07b16aeab6a4">zoncoen</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/ae8d7e4e-024b-11e4-9357-07b16aeab6a4">zoncoen</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/61b78258-026f-11e4-9357-07b16aeab6a4">初心者が Web エンジニアのコミュニティに触れてみて感じたこと - ゆとりエンジニアの成長戦略</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/61b78258-026f-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <h2>tl;dr</h2>
+
+<p>初心者が Web エンジニアのコミュニティに触れて感じたこと、また自分が成長するために挑戦しているコミュニティとの付き合い方の話をします。</p>
+
+<h2>詳細</h2>
+
+<p>インターネット上で簡単にコミュニケーションがとれる昨今、Perl に限らず多くのコミュ...</p>
+
+<p><a href="/2014/talk/show/61b78258-026f-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/1c04d0d6-ebb2-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/9958?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/1c04d0d6-ebb2-11e3-bd6d-c7a06aeab6a4">Kazuhiro Osawa</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/1c04d0d6-ebb2-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/9958?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/1c04d0d6-ebb2-11e3-bd6d-c7a06aeab6a4">Kazuhiro Osawa</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/8f7ead9a-ebba-11e3-bd6d-c7a06aeab6a4">Java For Perl Mongers </a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/8f7ead9a-ebba-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>このグローバル化する時代において、Web サイトで利用するプログラム言語の他言語化はますますその重要度を増しております。
+一つのプログラム言語の知識しか無い状態で Web サービスを開発していく事は難しいと言えます。</p>
+
+<p>今回は、長年 LL 使いの人が忌み嫌っていた J...</p>
+
+<p><a href="/2014/talk/show/8f7ead9a-ebba-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/63144efa-0c8e-11e4-bd05-9c796aeab6a4">Lightning Talks Day 1</a> (60 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/63144efa-0c8e-11e4-bd05-9c796aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Lightning Talks!</p>
+
+<hr />
+
+<p>Spaekers:</p>
+
+<ol>
+<li>maka2_donzoko@twitter</li>
+<li>charsbar@github</li>
+<li>shoichikaji@github</li>
+<li>__papix__@twitter
+5....</li>
+</ol>
+
+<p><a href="/2014/talk/show/63144efa-0c8e-11e4-bd05-9c796aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/8c8f7bd6-f638-11e3-b7e8-e4a96aeab6a4">Yuichiro SAITO</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/8c8f7bd6-f638-11e3-b7e8-e4a96aeab6a4">Yuichiro SAITO</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/d1eb4942-fdb5-11e3-b7e8-e4a96aeab6a4">突然ITインフラを任された人のための…監視設計入門</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/d1eb4942-fdb5-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>「んじゃ、今日からサーバの面倒を見てもらっていい？」</p>
+
+<p>と無茶振りされたけど、サーバの監視ってどうやればいいんだろう(；・∀・) と悩んでいる方、いらっしゃいませんか？
+また、ITインフラ構築の自動化を進めている方、監視設定は大丈夫でしょうか？</p>
+
+<p>本トークでは、I...</p>
+
+<p><a href="/2014/talk/show/d1eb4942-fdb5-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/0c6c7a90-ef25-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/46764?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/0c6c7a90-ef25-11e3-b7e8-e4a96aeab6a4">Masahiro Nagano</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/0c6c7a90-ef25-11e3-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/46764?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/0c6c7a90-ef25-11e3-b7e8-e4a96aeab6a4">Masahiro Nagano</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/97cc7bbc-ef25-11e3-b7e8-e4a96aeab6a4">Dockerで遊んでみよっかー</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/97cc7bbc-ef25-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>インフラの自動化、Immutable Infrastructure、新しいアプリケーションのデプロイ方法、Dockerを支えるLinuxのコンテナ技術などなどDockerは各方面でかなり盛り上がっています。先日のDocker Meetup Tokyoにも数百人の参加応募が集...</p>
+
+<p><a href="/2014/talk/show/97cc7bbc-ef25-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/738956136/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4">Daisuke Maki</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/738956136/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/e6e77370-eba4-11e3-b2ea-0c9f6aeab6a4">Daisuke Maki</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/c06cb1ae-ec5f-11e3-bd6d-c7a06aeab6a4">オープンソースの開発現場 - Perl 5.20 のSubroutine Signaturesが来るまでの奮闘の軌跡</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/c06cb1ae-ec5f-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Perl 5.20ではとうとうPerlにsubroutine signaturesが入りました。ですが、その裏ではこの機能をマージしてもらうための長く苦しい戦いを戦った一人の男がいたのです…</p>
+
+<p>本トークではsubroutine signaturesについてではなく、su...</p>
+
+<p><a href="/2014/talk/show/c06cb1ae-ec5f-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/500b42fc-00d4-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/145686?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/500b42fc-00d4-11e4-b7e8-e4a96aeab6a4">Naosuke Yokoe</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/500b42fc-00d4-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/145686?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/500b42fc-00d4-11e4-b7e8-e4a96aeab6a4">Naosuke Yokoe</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/2288ed6c-00d8-11e4-b7e8-e4a96aeab6a4">Perl Mongersのためのstrace入門</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/2288ed6c-00d8-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>このグローバル化する時代において、Web サイトで利用するプログラム言語の他言語化はますますその重要度を増しております。 一つのプログラム言語だけでサービスを提供する事も難しくなっていくことでしょう。</p>
+
+<p>そのため、本talkではプログラム言語を限定せずWebアプリケーシ...</p>
+
+<p><a href="/2014/talk/show/2288ed6c-00d8-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/9cb852c6-fea8-11e3-b7e8-e4a96aeab6a4">uzulla</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/9cb852c6-fea8-11e3-b7e8-e4a96aeab6a4">uzulla</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/a02d05e6-fead-11e3-b7e8-e4a96aeab6a4">半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情（5.6対応）</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/a02d05e6-fead-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>LAMP（<em>Linux Apache Mysql PHP</em>）。これのインパクトと莫大な成功（バブル）、そして後に残された膨大な負債については疑う余地はないでしょう。
+当時、 <strong>「P」を争うPerl(CGI)-PHP戦争</strong> で、「お手軽」「ゆるふわ」「コピペコード」でシ...</p>
+
+<p><a href="/2014/talk/show/a02d05e6-fead-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/b9dff14c-fe53-11e3-b7e8-e4a96aeab6a4">Naoya Ito</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/b9dff14c-fe53-11e3-b7e8-e4a96aeab6a4">Naoya Ito</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/2eb3bf9e-fe54-11e3-b7e8-e4a96aeab6a4">Google BigQuery で DWH 構築</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/2eb3bf9e-fe54-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Google BigQuery で Data Warehouse を構築する話
+対象がビッグデータじゃなくても、それなり利用価値はありそうです
+Perl からどう使うか、も少し触れてみたい</p>
+
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/153bc730-ebb4-11e3-bd6d-c7a06aeab6a4">Kazuho Oku</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/153bc730-ebb4-11e3-bd6d-c7a06aeab6a4">Kazuho Oku</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/117bc3c2-00f7-11e4-b7e8-e4a96aeab6a4">JSON SQLインジェクション脆弱性と、そこから学ぶセキュアプログラミングの原則</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/117bc3c2-00f7-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p><a href="http://blog.kazuhooku.com/2014/07/the-json-sql-injection-vulnerability.html">JSON SQLインジェクション脆弱性</a>は、[SQL::Maker](https://metacpan.org/pod...</p>
+
+<p><a href="/2014/talk/show/117bc3c2-00f7-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/3282312c-ecb2-11e3-b82e-98666aeab6a4">papix (国際的コンテンツ)</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/3282312c-ecb2-11e3-b82e-98666aeab6a4">papix (国際的コンテンツ)</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/85f8f5de-0c8d-11e4-bd05-9c796aeab6a4">Perl入学式 in YAPC::Asia Tokyo 2014</a> (150 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/85f8f5de-0c8d-11e4-bd05-9c796aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <h1>Perl入学式とは?</h1>
+
+<p>｢Perl入学式｣は, プログラミング未経験者からPerl初心者を対象とした, プログラミング言語｢Perl｣の勉強会(ワークショップ)です.</p>
+
+<p>プログラミングにチャレンジする際, 一番最初の難関となり得る｢環境構築｣からスタートして, ｢P...</p>
+
+<p><a href="/2014/talk/show/85f8f5de-0c8d-11e4-bd05-9c796aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/553eaede-034b-11e4-9357-07b16aeab6a4">Sawyer X</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/553eaede-034b-11e4-9357-07b16aeab6a4">Sawyer X</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/e43c8fa2-034b-11e4-9357-07b16aeab6a4">Plack for Fun and Profit (But Mostly Profit)</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/e43c8fa2-034b-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Sure, Plack is great, but is it really the best thing since the invention of exaggerated statements about web technologies? Yes. Yes, it ...</p>
+
+<p><a href="/2014/talk/show/e43c8fa2-034b-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/49443ae4-ebaa-11e3-bd6d-c7a06aeab6a4">こばけん</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/49443ae4-ebaa-11e3-bd6d-c7a06aeab6a4">こばけん</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/ce6e777e-fb91-11e3-b7e8-e4a96aeab6a4">ほんとにあったスキーマの話 「ソーシャルゲーム」</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/ce6e777e-fb91-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Webアプリケーションをつくりはじめるとき、 <br />
+まず「どういうテーブル定義にしようか」 <br />
+悩むのかなと思います。</p>
+
+<p>別の言い方すると、 <br />
+コードレビューで一番盛り上がって、面白いのが、 <br />
+スキーマ定義だったりしませんか？！</p>
+
+<p>本トークでは、Web...</p>
+
+<p><a href="/2014/talk/show/ce6e777e-fb91-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/741bbc6c-ec7a-11e3-b82e-98666aeab6a4">songmu</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/741bbc6c-ec7a-11e3-b82e-98666aeab6a4">songmu</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/e10a7e62-01ba-11e4-b7e8-e4a96aeab6a4">Perl For (Non?) Perl Mongers</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/e10a7e62-01ba-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <h2>TL;DR</h2>
+
+<p>Perlにあまり馴染みのない人に対して真面目なPerlの話をします。最近のPerl事情について知りたい人も対象です</p>
+
+<hr />
+
+<p>私はこれまで数年間、仕事でガッツリPerlを書いてきましたが、古いPerlにあまり触れて来なかったこともあり、あま...</p>
+
+<p><a href="/2014/talk/show/e10a7e62-01ba-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/b4f5999c-ff6c-11e3-b7e8-e4a96aeab6a4">あらたま</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/b4f5999c-ff6c-11e3-b7e8-e4a96aeab6a4">あらたま</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/77109da0-00b8-11e4-b7e8-e4a96aeab6a4">モバイルアプリとAPIのありかたを考える2014</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/77109da0-00b8-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>あなたは「送信中…」が表示されたままちっとも先に進めないモバイルアプリにイラッとしたことはありませんか？ <br />
+いま主流となっているクライアントとAPIとのやりとりは、本当にわたしたちにとって幸せなかたちなのでしょうか？ <br />
+誰もがベストプラクティスを模索しているように感...</p>
+
+<p><a href="/2014/talk/show/77109da0-00b8-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/986acf9e-0c4c-11e4-aec0-ad686aeab6a4"><img src="https://avatars.githubusercontent.com/u/242?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/986acf9e-0c4c-11e4-aec0-ad686aeab6a4">Andy Delcambre</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/986acf9e-0c4c-11e4-aec0-ad686aeab6a4"><img src="https://avatars.githubusercontent.com/u/242?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/986acf9e-0c4c-11e4-aec0-ad686aeab6a4">Andy Delcambre</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/805806ba-0c6f-11e4-aec0-ad686aeab6a4">Changing the tires on a moving car: a case study in upgrading legacy architecture</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/805806ba-0c6f-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>GitHub's git repository infrastructure has grown very organically over the years, from a single testing server to today's sharded set of ...</p>
+
+<p><a href="/2014/talk/show/805806ba-0c6f-11e4-aec0-ad686aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/172cbb62-ebaa-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/374550?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/172cbb62-ebaa-11e3-bd6d-c7a06aeab6a4">karupanerura</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/172cbb62-ebaa-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/374550?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/172cbb62-ebaa-11e3-bd6d-c7a06aeab6a4">karupanerura</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/25f99ab0-fa15-11e3-b7e8-e4a96aeab6a4">Perl5 meta programming</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/25f99ab0-fa15-11e3-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>メタプログラミングと言えばrubyが有名です。しかし、perl5でもメタプログラミングを行う事は十分に可能です。
+メタプログラミングはプログラミングの可能性を広げるための技術の1つです。
+メタプログラミングの世界ではプログラムでプログラムを作ります。たとえば、全てのメソ...</p>
+
+<p><a href="/2014/talk/show/25f99ab0-fa15-11e3-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/593701ee-01b6-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/97260?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/593701ee-01b6-11e4-b7e8-e4a96aeab6a4">Ryo Ito</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/593701ee-01b6-11e4-b7e8-e4a96aeab6a4"><img src="https://avatars.githubusercontent.com/u/97260?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/593701ee-01b6-11e4-b7e8-e4a96aeab6a4">Ryo Ito</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/cc57f3ca-01b8-11e4-b7e8-e4a96aeab6a4">OAuth/OpenID Connectを用いてID連携を実装するときに気を付けること</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/cc57f3ca-01b8-11e4-b7e8-e4a96aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>こんにちは、ritouです。</p>
+
+<p>去年のYAPC::Asiaで「次世代のOpenIDとして仕様策定・実装が進んでいる」とかなんとか言ってPerlライブラリなどと一緒に紹介させていただきましたOpenID Connectが、2014年2月末にローンチされました。 <br />
+[O...</p>
+
+<p><a href="/2014/talk/show/cc57f3ca-01b8-11e4-b7e8-e4a96aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/a3863452-ec37-11e3-bd6d-c7a06aeab6a4">FUJI Goro (gfx)</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/a3863452-ec37-11e3-bd6d-c7a06aeab6a4">FUJI Goro (gfx)</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/3a5f2a0e-ec3e-11e3-bd6d-c7a06aeab6a4">Mobile Application Development for Perl Mongers [ninjinkun x gfx]</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/3a5f2a0e-ec3e-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <h2>概要</h2>
+
+<p>このtalkは <a href="https://yapcasia.org/2014/talk/show/047613f4-032b-11e4-9357-07b16aeab6a4">Webサービスのネイティブアプリ開発プラクティス by ninjinkun</a> と合体しました...</p>
+
+<p><a href="/2014/talk/show/3a5f2a0e-ec3e-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/b08c1da2-eba5-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/100000459480102/picture" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/b08c1da2-eba5-11e3-b2ea-0c9f6aeab6a4">Tatsuro Hisamori</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/b08c1da2-eba5-11e3-b2ea-0c9f6aeab6a4"><img src="http://graph.facebook.com/100000459480102/picture" width="70" height="70" /></a>
+<a href="/2014/member/show/b08c1da2-eba5-11e3-b2ea-0c9f6aeab6a4">Tatsuro Hisamori</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/3e5824a8-eba8-11e3-bd6d-c7a06aeab6a4">YAPC::Europe 2014 に行ってきました</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/3e5824a8-eba8-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>YAPC::Asia 2013 の Best Talk Awards 副賞が諸事情で繰り上がり、海外カンファレンスに行く権利を得られたのでYAPC::Europe 2014に参加してくる予定です。(YAPC::Europe 2014は2014/8/22 - 2014/8/2...</p>
+
+<p><a href="/2014/talk/show/3e5824a8-eba8-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/ff6f6c66-00c3-11e4-b7e8-e4a96aeab6a4">hitode909</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/ff6f6c66-00c3-11e4-b7e8-e4a96aeab6a4">hitode909</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/a5bbcd3a-02a4-11e4-9357-07b16aeab6a4">Perlの静的解析入門とPerlリファクタリングツールApp::PRTのご紹介</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/a5bbcd3a-02a4-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>古来より，Perlのソースコードをリファクタリングすると言えば，テキストエディタでソースコードをちまちま人間が書き換えるスタイルが一般的でした．</p>
+
+<p>私は，Perlのソースコードをリファクタリングするためのツールである，Perlリファクタリングツール [App::PRT]...</p>
+
+<p><a href="/2014/talk/show/a5bbcd3a-02a4-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/b53b2a6e-ebff-11e3-bd6d-c7a06aeab6a4">ファッションポエム</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/b53b2a6e-ebff-11e3-bd6d-c7a06aeab6a4">ファッションポエム</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/adfd5cb8-01c1-11e4-9357-07b16aeab6a4">趣味開発のためのクラウド/VPS活用術</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/adfd5cb8-01c1-11e4-9357-07b16aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>仕事でプログラムを書く時は指定された環境や、便利な社内ツール群、相談にのってくれる仲間や、何より豊富なコンピューティングリソースがあるでしょう。</p>
+
+<p>しかし仕事から分離された趣味の開発ではそういったサーバは使えないことがあるわけで、それをどのように調達したり工夫を行うこと...</p>
+
+<p><a href="/2014/talk/show/adfd5cb8-01c1-11e4-9357-07b16aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/2a42903e-ebb2-11e3-bd6d-c7a06aeab6a4">tagomoris</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/2a42903e-ebb2-11e3-bd6d-c7a06aeab6a4">tagomoris</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/d5049940-ebb2-11e3-bd6d-c7a06aeab6a4">そんなにビッグでもないデータ処理手法の話</a> (20 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/d5049940-ebb2-11e3-bd6d-c7a06aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>ビッグデータという言葉が取り上げられるようになって久しいですが、実際どういう処理をどういう方法で実現するの、という総括はあまり行われていない気がします。</p>
+
+<p>このトークでは、ペタバイト級データはちょっといま手元にないんで、という人のために、GB級からTB級までの「あんまり...</p>
+
+<p><a href="/2014/talk/show/d5049940-ebb2-11e3-bd6d-c7a06aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/84b4d20a-0c8e-11e4-bd05-9c796aeab6a4">Lightning Talks Day 2</a> (60 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/84b4d20a-0c8e-11e4-bd05-9c796aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Lightning Talks!</p>
+
+<hr />
+
+<p>Speakers:</p>
+
+<ol>
+<li>Yappo / 1min</li>
+<li>tatsuro.hisamori@facebook</li>
+<li>Yudai Suzuki@facebook    </li>
+<li>libitte@twitter</li>
+<li>...</li>
+</ol>
+
+<p><a href="/2014/talk/show/84b4d20a-0c8e-11e4-bd05-9c796aeab6a4">read more...</a></p>
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><a href="/2014/member/show/02387faa-ebb1-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3420?v=4" width="70" height="70" /></a>
+</div>
+    <p class="name"><a href="/2014/member/show/02387faa-ebb1-11e3-bd6d-c7a06aeab6a4">Daisuke Murase</a></p>
+</div>
+<div class="speaker-sp">
+    <a href="/2014/member/show/02387faa-ebb1-11e3-bd6d-c7a06aeab6a4"><img src="https://avatars.githubusercontent.com/u/3420?v=4" width="70" height="70" /></a>
+<a href="/2014/member/show/02387faa-ebb1-11e3-bd6d-c7a06aeab6a4">Daisuke Murase</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/4c1b9652-0c86-11e4-aec0-ad686aeab6a4">キーノート</a> (40 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/4c1b9652-0c86-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>TBD</p>
+
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+<div class="talk unhandled">
+<div class="speaker">
+    <div class="icon"><div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+</div>
+    <p class="name"><a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a></p>
+</div>
+<div class="speaker-sp">
+    <div style="width: 70px; height: 70px; background-color: #999">&nbsp;</div>
+<a href="/2014/member/show/3ac871a6-eb14-11e3-a73d-fe786aeab6a4">Yusuke Wada</a>
+</div>
+<div class="details">
+    <table class="table table-bordered">
+    <tr>
+        <td width="400">
+            <div class="title">
+                <div>
+                    <a href="/2014/talk/show/28f95212-0c87-11e4-aec0-ad686aeab6a4">YAPC::Asia Tokyo 2014 - クロージング</a> (10 min)
+                </div>
+                <div class="social-buttons" data-url="https://yapcasia.org/2014/talk/show/28f95212-0c87-11e4-aec0-ad686aeab6a4"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="abstract">
+            <p>Close the YAPC::Asia Tokyo 2014.</p>
+
+        </td>
+    </tr>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+</div><!--  / .body /  -->
+</div><!--  / .section /  -->
+</section>
+
+
+
+
+<footer>
+<div id="footer">
+<div class="innerblock">
+<div class="links">
+<ul>
+<li><a href="http://tokyo.yapcasia.org/blog/ja/"><span class="icon-logo_icon_2006"></span>2006</a></li>
+<li><a href="http://tokyo2007.yapcasia.org/blog/ja/"><span class="icon-logo_icon_2007"></span>2007</a></li>
+<li><a href="http://conferences.yapcasia.org/ya2008/"><span class="icon-logo_icon_2008"></span>2008</a></li>
+<li><a href="http://conferences.yapcasia.org/ya2009/"><span class="icon-logo_icon_2009"></span>2009</a></li>
+<li><a href="https://yapcasia.org/2010/"><span class="icon-logo_icon_2010"></span>2010</a></li>
+<li><a href="https://yapcasia.org/2011/"><span class="icon-logo_icon_2011"></span>2011</a></li>
+<li><a href="https://yapcasia.org/2012/"><span class="icon-logo_icon_2012"></span>2012</a></li>
+<li><a href="https://yapcasia.org/2013/"><span class="icon-logo_icon_2013"></span>2013</a></li>
+</ul>
+</div><!--  / .links /  -->
+<address>
+<p>© 2014 <a href="http://japan.perlassociation.org" target="_blank">Japan Perl Association</a></p>
+<p>Powered by <a href="http://www.cloudcore.jp/" target="_blank">CloudCore</a> and <a href="http://www.sixapart.jp/movabletype/" target="_blank">Movable Type</a></p>
+</address>
+</div>
+</div><!--  / #footer /  -->
+</footer>
+
+<div id="pagetop"><a href="#top"><span class="glyphicon glyphicon-eject"></span></a></div>
+
+</div><!--  / #wrapper /  -->
+
+<script src="https://yapcasia.org/2014/static/js/bootstrap.min.js"></script>
+<script src="https://yapcasia.org/2014/static/js/functions.js"></script>
+<script>
+<!--
+    $("a.hatena-bookmark-button").each( function(i, e) {
+        $(e).attr({ href: "http://b.hatena.ne.jp/entry/" + location.href });
+    } );
+    $([
+        {
+            src: "http://b.st-hatena.com/js/bookmark_button.js",
+            id: "hatena-bookmark"
+        },
+        {
+            src: "http://static.mixi.jp/js/plugins.js#lang=ja",
+            id: "mixi-check"
+        },
+        {
+            src: "http://platform.twitter.com/widgets.js",
+            id: "twitter-wjs"
+        },
+        {
+            src: "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0&appId=144267325643659",
+            id: "facebook-jssdk"
+        },
+        {
+            src: 'https://apis.google.com/js/plusone.js',
+            id: "google-plusone"
+        }
+    ]).each( function(i, e) {
+        var s = document.getElementById(e.id);
+        if (! s) {
+            s = document.createElement('script');
+            s.id = e.id;
+            s.src = e.src;
+            s.async = true;
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+    });
+-->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51547319-1', 'yapcasia.org');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
