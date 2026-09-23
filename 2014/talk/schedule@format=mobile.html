@@ -28,9 +28,9 @@
 
 
               <div ng-controller="DateController" ng-init="change_date();" class="buttons-row schedule-tabs">
-                <a href="schedule?format=mobile#tab1" class="tab-link button " data-date="2014-08-28">Thu 8/28</a>
-                <a href="schedule?format=mobile#tab2" class="tab-link button " data-date="2014-08-29">Fri 8/29</a>
-                <a href="schedule?format=mobile#tab3" class="tab-link button " data-date="2014-08-30">Sat 8/30</a>
+                <a href="#tab1" class="tab-link button " data-date="2014-08-28">Thu 8/28</a>
+                <a href="#tab2" class="tab-link button " data-date="2014-08-29">Fri 8/29</a>
+                <a href="#tab3" class="tab-link button " data-date="2014-08-30">Sat 8/30</a>
               </div>
 
               <div id="schedule" class="content-block" ng-controller="ScheduleController" ng-init="load();">
@@ -56,14 +56,14 @@
                                 </div>
                                 <div class="clear"></div>
                                 <div class="entry-abstract" ng-bind-html="talk.abstract_html"></div>
-                                <p><a href="schedule?format=mobile#" class="button button-round close-popup">Close</a></p>
+                                <p><a href="#" class="button button-round close-popup">Close</a></p>
                               </div>
                             </div>
                             <!-- /END of popup -->
                             <div class="item-content" onclick>
                               <div class="item-media"><img ng-src="{{ talk.speaker.profile_image_url }}" width="50"></div>
                               <div class="item-inner">
-                                <a href="schedule?format=mobile#" highlight="active" ng-click="show_detail(talk.id);" class="touch" ng-class="touch">
+                                <a href="#" highlight="active" ng-click="show_detail(talk.id);" class="touch" ng-class="touch">
                                   <div class="item-title-row">
                                     <div class="item-title">{{ talk.title || talk.title_en }}</div>
                                   </div>
@@ -84,15 +84,15 @@
 
         <div class="toolbar">
           <div class="toolbar-inner" ng-controller="ToolbarController">
-            <a href="schedule?format=mobile#" class="link" ng-click="scroll_to_top();">Schedules</a>
-            <a href="schedule?format=mobile#" class="link" ng-click="show_map();">Maps</a>
+            <a href="#" class="link" ng-click="scroll_to_top();">Schedules</a>
+            <a href="#" class="link" ng-click="show_map();">Maps</a>
           </div>
         </div>
 
         <div id="map">
           <div class="popup map">
             <img src="/2014/static/mobile/img/map.png" />
-            <p><a href="schedule?format=mobile#" class="button button-round close-popup">Close</a></p>
+            <p><a href="#" class="button button-round close-popup">Close</a></p>
           </div>
         </div>
             
